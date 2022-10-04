@@ -31,7 +31,7 @@ let tempMonth = tempDate.getMonth();
 let tempDay = tempDate.getDate();
 
 //let futureDate = new Date(2023,3,1,22,00,0);
-const futureDate = new Date(tempYear+1,3,1,1,0,0)
+const futureDate = new Date(tempYear+1,3,1,12,1,0)
 
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
@@ -46,7 +46,7 @@ let weekday = futureDate.getDay();
 weekday = weekdays[weekday];
 
 
-giveaway.textContent = `Your next birthday will be on ${weekday}, ${month} ${date}, ${year} 0${hours}:0${minutes}am`;
+giveaway.textContent = `Your next birthday will be on ${weekday}, ${month} ${date}, ${year} ${hours}:0${minutes}am`;
 
 const futureTime = futureDate.getTime();
 
