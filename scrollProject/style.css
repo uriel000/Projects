@@ -139,7 +139,16 @@ section img#trees{
     color: #2d1a4a;
     font-size: 1.5em;
     z-index: 9;
+    transition: scale,color .5s ease-in-out;
     transform: translateY(100px);
+}
+#btn:hover{
+    scale: 1.05;
+    background-color: #040714;
+    color: #fff;
+}
+#btn:active{
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.94);
 }
 
 .sec{
