@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+/* 
+font-family: 'Capriola', sans-serif;
+font-family: 'Barlow', sans-serif;
+*/
+/* 
+
+*/
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #121212;
+    color: white;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.logo-container{
+    flex: 1;
+}
+.logo{
+    font-family: 'Capriola', sans-serif;
+    font-size: 30px;
+    color: #937DC2;
+}
+.menu-container{
+    flex: 6;
+    margin-left: 30px;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-list-item{
+    margin-right: 40px;
+    transition: all .4s ease-in-out;
+}
+.menu-list-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.menu-list-item:hover{
+    transform: scale(1.2);
+}
+.menu-list-item:active{
+    text-decoration: underline;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+
+.profile-picture{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.profile-picture:hover{
+    transform: rotateZ(360deg);
+}
+
+.toggle{
+    width: 38px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: gold;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.sidebar{
+    width: 50px;
+    height: 100vh;
+    background-color: #121212;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    transition: all .5s ease-in-out;
+}
+
+.left-menu-icon {
+    color: white;
+    margin-bottom: 60px;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
+}
+.left-menu-icon:hover{
+    transform: scale(1.2);
+}
+
+.left-menu-icon:active{
+    transform: rotateZ(800deg);
+}
+
+.container{
+    background-color: #101925;
+    min-height: calc(100vh - 50px);
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
+.content-container {
+    margin-left: 50px;
+}
+
+.featured-content{
+    height: 50vh;
+    padding: 50px;
+
+}
+.featured-title{
+    width: 400px;
+}
+
+.featured-desc{
+    width: 600px;
+    font-size: 24px;
+    color: lightgray;
+    margin: 30px 0px;
+}
+
+.featured-button{
+    background-color: #937DC2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    
+}
+/* Buttons animation */
+button{
+    transition: all .5s ease;
+}
+
+button:hover{
+    transform:scale(1.2);
+}
+
+button:active{
+    background-color: #101925;
+    transition: none;
+}
+
+.movie-list-container{
+    padding: 0 20px;
+}
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+    margin: 20px 0;
+}
+
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.1);
+    margin: 0 30px;
+    opacity: 0.4;
+}
+.movie-list-item:hover .movie-list-item-title, 
+.movie-list-item:hover .movie-list-item-desc, 
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+    scale: 1;
+
+}
+
+.movie-list-item-img{
+    width: 430px;
+    height: 260px;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    border-radius: 20px;
+}
+
+.movie-list-item-title{
+    /* background-color: #333; */
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    border-radius: 5px;
+    scale: .1;
+    transition: all 1s ease-in-out;
+    color: #c7b0f9;
+}
+
+.movie-list-item-desc{
+    /* background-color: #333; */
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    border-radius: 5px;
+    scale: .1;
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item-button{
+    padding: 10px 50px;
+    background-color: #937DC2;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    opacity: 0;
+    scale: .1;
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: rgb(162, 158, 158);
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* #5C5468, #A27587, */
+
+.container.active{
+    background-color: rgba(255, 255, 255, 0.963);
+    /* background: linear-gradient(to right, #E18284, #F4AF98); */
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+.sidebar.active{
+    background-color: white;
+}
+.left-menu-icon.active{
+    color: black;
+}
+
+.menu-list-item a.active{
+    color: black;
+}
+
+.movie-list-item-title.active{
+    opacity: 1;
+    color: #3b2c5a;
+}
+.movie-list-item-img.active:hover{
+    opacity: 0.2;
+}
+
+.movie-list-item-desc.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-18px);
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+    .featured-title, .featured-desc{
+        width: 100%;
+    }
+    .featured-content{
+        margin-bottom: 50px;
+    }
+
+
+}

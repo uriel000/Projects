@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mali&family=Montserrat&display=swap');
+
+/* font-family: 'Mali', cursive;
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior:smooth;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#5C5468, #A27587, #E18284);
+}
+
+/* .container{
+    margin: 0 15%;
+    position: relative;} */
+
+/* .right{
+    position: absolute;
+    right: -25%;
+    background: linear-gradient(#5C5468, #A27587, #E18284);
+    height: 100%;
+    width: 25%;
+    z-index: 10000;
+} */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 250px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover, header ul li a.active{
+    background: #fff;
+    color: #2d1a4a;
+}
+#stars{
+    width: 100%;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #040714, transparent);
+    z-index: 1000;
+
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    pointer-events: none;
+}
+
+
+section img#moon{
+    mix-blend-mode: screen;
+}
+section img#mountain1{
+    z-index: 10;
+}
+section img#trees{
+    z-index: 10;
+}
+
+#text{
+    position: absolute;
+    left: -70px;
+    /* bottom: 90px; */
+    color: #fff;
+    white-space: nowrap;
+    font-size: 5.5vw;
+    z-index: 9;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+#btn{
+    position: absolute;
+    top: 400px;
+    right: 40%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2d1a4a;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #040714;
+    color: #fff;
+}
+.sec h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    margin-bottom: 10px;
+    margin: 0 10%;
+}
+.sec p {
+    font-size: 1.2em;
+    margin: 0 10%;
+}
+
+
+footer{
+    display: none;
+}

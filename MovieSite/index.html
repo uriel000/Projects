@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stlye.css">
+    <script src="script.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Capriola&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="icon" href="https://img.icons8.com/external-flaticons-flat-flat-icons/512/external-dream-lifestyles-flaticons-flat-flat-icons-2.png" type="image/x-icon">
+
+
+    <title>Movie Dream</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">dreamer</h1>
+            </div>
+            <div class="menu-container">
+                <u class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item"><a href="#movies">Movies</a></li>
+                    <li class="menu-list-item"><a href="#series">Series</a></li>
+                    <li class="menu-list-item"><a href="#popular">Popular</a></li>
+                    <li class="menu-list-item"><a href="#trending">Trends</a></li>
+                </u>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="/assets/jesriel.jpg" alt="profile picture">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fa-sharp fa-solid fa-magnifying-glass"></i>
+        <i class="left-menu-icon fa-solid fa-house-chimney"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-sharp fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #101925), url('https://images.unsplash.com/photo-1568952433726-3896e3881c65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+                <img class="featured-title" src="/assets/interstellar.png" alt="Interstellar film">
+
+                <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem dolores, consequuntur esse enim in doloremque nisi facilis ad ducimus perferendis tempore laboriosam voluptate pariatur reprehenderit ipsa minus? Iste, inventore!</p>
+                <button class="featured-button">WATCH NOW!</button>
+            </div>
+            <div class="movie-list-container" id="movies">
+                <h1 class="movie-list-title">NEW MOVIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/736/411/582/star-wars-star-wars-the-rise-of-skywalker-movie-poster-poster-movie-characters-hd-wallpaper-preview.jpg" alt="Star Wars">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/221/189/102/batman-batman-begins-movies-the-dark-knight-wallpaper-preview.jpg" alt="Batman">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/232/717/114/venom-movie-venom-superheroes-hd-wallpaper-preview.jpg" alt="Venom">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/996/743/625/pascal-blanche-dune-movie-dune-series-artwork-science-fiction-hd-wallpaper-preview.jpg" alt="Dune">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/156/167/750/movies-thor-chris-hemsworth-black-background-wallpaper-preview.jpg" alt="Thor">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/123/991/646/avatar-blue-skin-james-cameron-s-movie-avatar-movie-poster-wallpaper-preview.jpg" alt="Avatar">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/319/432/989/mad-max-mad-max-fury-road-poster-movie-poster-wallpaper-preview.jpg" alt="Mad max">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container" id="series">
+                <h1 class="movie-list-title">New Series</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/736/411/582/star-wars-star-wars-the-rise-of-skywalker-movie-poster-poster-movie-characters-hd-wallpaper-preview.jpg" alt="Star Wars">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/221/189/102/batman-batman-begins-movies-the-dark-knight-wallpaper-preview.jpg" alt="Batman">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/232/717/114/venom-movie-venom-superheroes-hd-wallpaper-preview.jpg" alt="Venom">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/996/743/625/pascal-blanche-dune-movie-dune-series-artwork-science-fiction-hd-wallpaper-preview.jpg" alt="Dune">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/156/167/750/movies-thor-chris-hemsworth-black-background-wallpaper-preview.jpg" alt="Thor">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/123/991/646/avatar-blue-skin-james-cameron-s-movie-avatar-movie-poster-wallpaper-preview.jpg" alt="Avatar">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/319/432/989/mad-max-mad-max-fury-road-poster-movie-poster-wallpaper-preview.jpg" alt="Mad max">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #101925), url('https://images.unsplash.com/photo-1483982258113-b72862e6cff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+                <img class="featured-title" src="/assets/conjuring.png" alt="Interstellar film">
+
+                <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem dolores, consequuntur esse enim in doloremque nisi facilis ad ducimus perferendis tempore laboriosam voluptate pariatur reprehenderit ipsa minus? Iste, inventore!</p>
+                <button class="featured-button">WATCH NOW!</button>
+            </div>
+            <div class="movie-list-container" id="popular">
+                <h1 class="movie-list-title">POPULAR MOVIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/1023/915/631/nasa-space-suit-digital-art-space-wallpaper-preview.jpg" alt="Star Wars">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/221/189/102/batman-batman-begins-movies-the-dark-knight-wallpaper-preview.jpg" alt="Batman">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/232/717/114/venom-movie-venom-superheroes-hd-wallpaper-preview.jpg" alt="Venom">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/996/743/625/pascal-blanche-dune-movie-dune-series-artwork-science-fiction-hd-wallpaper-preview.jpg" alt="Dune">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/156/167/750/movies-thor-chris-hemsworth-black-background-wallpaper-preview.jpg" alt="Thor">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/123/991/646/avatar-blue-skin-james-cameron-s-movie-avatar-movie-poster-wallpaper-preview.jpg" alt="Avatar">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/319/432/989/mad-max-mad-max-fury-road-poster-movie-poster-wallpaper-preview.jpg" alt="Mad max">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container" id="trending">
+                <h1 class="movie-list-title">TRENDING</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/736/411/582/star-wars-star-wars-the-rise-of-skywalker-movie-poster-poster-movie-characters-hd-wallpaper-preview.jpg" alt="Star Wars">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/221/189/102/batman-batman-begins-movies-the-dark-knight-wallpaper-preview.jpg" alt="Batman">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/232/717/114/venom-movie-venom-superheroes-hd-wallpaper-preview.jpg" alt="Venom">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/996/743/625/pascal-blanche-dune-movie-dune-series-artwork-science-fiction-hd-wallpaper-preview.jpg" alt="Dune">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/156/167/750/movies-thor-chris-hemsworth-black-background-wallpaper-preview.jpg" alt="Thor">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/123/991/646/avatar-blue-skin-james-cameron-s-movie-avatar-movie-poster-wallpaper-preview.jpg" alt="Avatar">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://c4.wallpaperflare.com/wallpaper/319/432/989/mad-max-mad-max-fury-road-poster-movie-poster-wallpaper-preview.jpg" alt="Mad max">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugit illum atque, porro, odio adipisci similique maiores.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
