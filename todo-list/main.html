@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title id="mainTitle">To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Assets/listIcon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="returnDiv">
+      <a href="landing.html"
+        ><img
+          src="Assets/returnIcon.png"
+          alt="Return icon"
+          id="returnIcon"
+        /><span>Go back</span></a
+      >
+    </div>
+    <h1>Hi! <span id="user"></span>, Here's your To-Do List! 🫧</h1>
+    <p>
+      Type your task inside the box then press add. Click checkbox if task is
+      done!
+    </p>
+    <div class="todoListInput">
+      <input
+        type="text"
+        id="todoInputBox"
+        required
+        placeholder="Add new item"
+      />
+      <button onclick="addList()" id="addBtn">Add</button>
+    </div>
+
+    <div class="todoListItems">
+      <ul id="list"></ul>
+    </div>
+
+    <div class="doneItems">
+      <span id="progress">Finished: <span id="done">0</span></span>
+      <ul id="finishedList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

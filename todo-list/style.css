@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #5c5468, #a27587, #e18284, #f4af98);
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fffafa;
+}
+
+h1 {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.returnDiv {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 20px;
+  color: #fffafa;
+  width: 120px;
+}
+
+.returnDiv a {
+  text-decoration: none;
+  color: #fffafa;
+  display: flex;
+  flex-direction: row;
+}
+.returnDiv a span {
+  margin-top: 13px;
+}
+
+.returnDiv:hover {
+  border-radius: 10px;
+  text-decoration: underline;
+  background-color: #414a4c;
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0;
+}
+#user {
+  color: #f4af98;
+  font-style: italic;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-shadow: 5px 5px 5px #414a4c;
+}
+#todoInputBox {
+  width: 300px;
+}
+
+button {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 10px;
+  background-color: transparent;
+  border: 1px solid #fffafa;
+  color: #fffafa;
+  box-shadow: 5px 5px 5px #414a4c;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+li span {
+  font-size: 20px;
+}
+
+li button {
+  justify-content: flex-end;
+}
+li:hover {
+  background-color: #f4af98;
+  border-radius: 5px;
+}
+
+#list {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#addBtn {
+  width: 80px;
+}
+.todoListInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoListItems {
+  position: relative;
+  display: flex;
+}
+
+.editDeleteBtn {
+  width: 150px;
+}
+
+.editDeleteBtn:first-of-type {
+  margin-left: auto;
+}
+
+#formDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+#landingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#formDiv button {
+  background-color: transparent;
+  border-radius: 15px;
+  width: 300px;
+  width: 100%;
+}
+
+#formDiv button:hover,
+button:hover {
+  background-color: #a27587;
+}
+
+#formDiv button:active,
+button:active {
+  box-shadow: none;
+}
+
+.doneItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+.doneItems #progress {
+  width: 150px;
+  background-color: #414a4c;
+  text-align: center;
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#finishedList li {
+  width: 400px;
+  display: block;
+  margin: 10px;
+}
